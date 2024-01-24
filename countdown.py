@@ -29,9 +29,9 @@ if kata == "YA":
                 time.sleep(2)
                 print("jadi sekarang pc kamu ke restart deh, hahahhaha")
                 time.sleep(2)
-                # os.system("shutdown /r /t 2")
+                os.system("shutdown /r /t 2")
                 berkas = open('Halopy', 'w')
-                berkas.write("laptop kamu mati hahah")
+                # berkas.write("laptop kamu mati hahah")
                 print("haloooooooooo")
                 print("baiiii")
             else:
