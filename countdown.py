@@ -1,6 +1,5 @@
 import os
 import time
-import sys 
 import random
 
 pilihan = input("Apakah tetap ingin melanjutkan? (Ya/Tidak)")
@@ -31,14 +30,11 @@ if kata == "YA":
                 time.sleep(2)
                 os.system("shutdown /r /t 2")
                 berkas = open('Halopy', 'w')
-                # berkas.write("laptop kamu mati hahah")
-                print("haloooooooooo")
-                print("baiiii")
+                berkas.write("laptop kamu mati hahah")
             else:
                 print("jawaban yang benar adalah: "+ str(angka))
                 print("selamat pc kammu tidak ke restart")
                 time.sleep(2)
-                print("nikmati waktunya :)")
                 exit()
 elif kata == "TIDAK":
     exit()
