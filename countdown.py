@@ -7,7 +7,7 @@ kata = pilihan.upper()
 
 
 if kata == "YA":
-    for i in range(5,0,-1):
+    for i in range(3,0,-1):
         print("Komputer mati dalam "+ str(i))
         time.sleep(1)
         if i <= 1:
