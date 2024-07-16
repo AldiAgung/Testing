@@ -1,0 +1,19 @@
+p{
+    font-family: "Gill Sans", sans-serif;
+    text-wrap: wrap;
+    size: 100px;
+    text-align: center;
+    letter-spacing: 1px;
+    width: 350px;
+    height: 200px;
+}
+
+body{
+    background-color: rgb(113, 104, 177);
+}
+
+h1{
+    
+    font-family: system-ui;
+    text-align: center;
+}
