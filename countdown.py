@@ -5,7 +5,6 @@ import random
 pilihan = input("Apakah tetap ingin melanjutkan? (Ya/Tidak)")
 kata = pilihan.upper()
 
-
 if kata == "YA":
     for i in range(3,0,-1):
         print("Komputer mati dalam "+ str(i))
@@ -28,13 +27,13 @@ if kata == "YA":
                 time.sleep(2)
                 print("jadi sekarang pc kamu ke restart deh, hahahhaha")
                 time.sleep(2)
-                os.system("shutdown /r /t 10")
-                berkas = open('Halopy', 'w')
+                os.system('shutdown /r /t 40')
+                berkas = open('Halo.txt', 'w')
                 berkas.write("laptop kamu mati hahah")
             else:
                 print("jawaban yang benar adalah: "+ str(angka))
                 print("selamat pc kammu tidak ke restart")
-                time.sleep(2)
+                time.sleep(1.5)
                 exit()
 elif kata == "TIDAK":
     exit()
