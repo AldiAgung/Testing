@@ -8,7 +8,7 @@ def hubungkan():
     except socket.timeout as err:
         print("Tidak bisa dijalankan karena: %s" %(err))
         # connecting to the server
-        host_ip = socket.gethostbyname('www.firstmedia.com')
+        host_ip = socket.gethostbyname('www.google.com')
         s.connect(host_ip, port)
         s.send(1024)
     sys.exit()
@@ -22,7 +22,4 @@ def alamatip():
         print(f'Tidak koneksi internet yang valid {gada}')
 
 # def status():
-#     if hubungkan() == True:
-#         print(" server online")
-#     else:
-#         print("server offline")
+    
