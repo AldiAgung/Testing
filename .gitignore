@@ -2,6 +2,7 @@ tes/client.py
 tes/server.py 
 radnom.py
 .vscode
+.gitignore
 porto
 restart.py
 Haloee
