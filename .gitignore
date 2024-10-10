@@ -1,9 +1,6 @@
 tes/client.py
 tes/server.py 
-radnom.py
-.vscode
 .gitignore
 porto
-.gitignore
 restart.py
-Haloee
+__pycache__
