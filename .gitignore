@@ -1,6 +1,5 @@
-tes/client.py
-tes/server.py 
 .gitignore
 porto
 restart.py
 __pycache__
+.vscode
