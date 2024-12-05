@@ -1,12 +1,15 @@
 import os, time
 
-try:
-    kata = int(input("berapa lama?: "))
-    os.system('shutdown /s /t '+ str(kata))
-except ValueError:
-    print(f"Harus berupa sebuah angka")
-    time.sleep(2)
-    exit()
+while (True):
+    try:
+        kata = int(input("berapa lama?: "))
+        os.system('shutdown /s /t '+ str(kata))
+        break
+    except:
+        print(f"harus berupa angka")
+        time.sleep(1)
+        print("coba lagi")
+        time.sleep(2)
 
-    #python -m compileall -l laptop.py
-    #python -m PyInstaller laptop.py
+#python -m compileall -l laptop.py
+#python -m PyInstaller laptop.py

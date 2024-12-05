@@ -18,22 +18,27 @@ if kata == "YA":
             time.sleep(2)
             print("siap?")
             time.sleep(2)
-            tebak = input("tebak angkanya: ")
             angka = random.randrange(1,10)
-            if (tebak != angka):
-                print("sayang sekali jawaban kamu salah")
-                time.sleep(2)
-                print("jawabannya adalah: "+ str(angka))
-                time.sleep(2)
-                print("jadi sekarang pc kamu ke restart deh, hahahhaha")
-                time.sleep(2)
-                os.system('shutdown /r /t 30')
-                berkas = open('Halo.txt', 'w')
-                berkas.write("laptop kamu mati hahah")
+            print(angka)
+            tebak = int(input("tebak angkanya: "))
+            while (tebak != angka):
+                try:
+                    print("sayang sekali jawaban kamu salah")
+                    time.sleep(2)
+                    print("jawabannya adalah: "+ str(angka))
+                    time.sleep(2)
+                    print("jadi sekarang pc kamu ke restart deh, hahahhaha")
+                    time.sleep(2)
+                    os.system('shutdown /r /t 30')
+                    berkas = open('Halo.txt', 'w')
+                    berkas.write("laptop kamu mati hahah")
+                    break
+                except ValueError:
+                    print(f"harus berupa sebuah angka")
             else:
                 print("jawaban yang benar adalah: "+ str(angka))
                 print("selamat pc kammu tidak ke restart")
-                time.sleep(1.5)
+                time.sleep(2)
                 exit()
 elif kata == "TIDAK":
     exit()
