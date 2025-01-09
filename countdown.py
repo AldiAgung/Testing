@@ -12,10 +12,10 @@ if kata == "YA":
         if i <= 1:
             print("tapi aku masih bakalan kasih kesempatan satu kali lagi")
             time.sleep(2)
-            print("jika bener jawabannya, gabakalan ke restart")
-            time.sleep(2)
+            print("jika bener jawabannya gabakalan ke restart")
+            time.sleep(1.5)
             print("kalau salah yah tetep aja ke restart lmao")
-            time.sleep(2)
+            time.sleep(1)
             print("siap?")
             time.sleep(2)
             angka = random.randrange(1,10)
@@ -26,14 +26,15 @@ if kata == "YA":
                     print("sayang sekali jawaban kamu salah")
                     time.sleep(2)
                     print("jawabannya adalah: "+ str(angka))
-                    time.sleep(2)
-                    print("jadi sekarang pc kamu ke restart deh, hahahhaha")
+                    time.sleep(1.5)
+                    print("jadi sekarang pc kamu ke restart deh HAHAHAHA")
                     time.sleep(2)
                     os.system('shutdown /r /t 30')
                     berkas = open('Halo.txt', 'w')
-                    berkas.write("laptop kamu mati hahah")
+                    berkas.write("komputer kamu mati hahah")
+                    berkas = open('Halo.txt', 'r')
                     break
-                except ValueError:
+                except (TypeError, ValueError):
                     print(f"harus berupa sebuah angka")
             else:
                 print("jawaban yang benar adalah: "+ str(angka))
