@@ -32,7 +32,7 @@ if kata == "YA":
                     os.system('shutdown /r /t 30')
                     berkas = open('Halo.txt', 'w')
                     berkas.write("komputer kamu mati hahah")
-                    berkas = open('Halo.txt', 'r')
+                    os.system('Halo.txt', 'r')
                     break
                 except (TypeError, ValueError):
                     print(f"harus berupa sebuah angka")
