@@ -1,6 +1,7 @@
-import socket, sys
+import socket, sys, urllib
 
-port = 5050
+port = 80
+host = "www.google.com"
 # def hubungkan():
 #     try:
 #         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -19,7 +20,15 @@ def alamatip():
         ipaddress = socket.gethostbyname(namahost)
         return ipaddress
     except socket.gaierror as gada:
-        print(f'Tidak koneksi internet yang valid {gada}')
+        print(f'Tidak ada koneksi internet yang valid {gada}')
 
-# def status():
-    
+def interstatus():
+    try:
+        socket.setdefaulttimeout(4)
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        alamatserver = (host, port)
+        s.connect(alamatserver)
+        s.close()
+        return True
+    except OSError:
+        return False

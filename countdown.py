@@ -22,6 +22,8 @@ if kata == "YA":
             print(angka)
             tebak = int(input("tebak angkanya: "))
             while (tebak != angka):
+                if os.path.exists('Halo.txt'):
+                    break
                 try:
                     print("sayang sekali jawaban kamu salah")
                     time.sleep(2)
@@ -32,9 +34,9 @@ if kata == "YA":
                     os.system('shutdown /r /t 30')
                     berkas = open('Halo.txt', 'w')
                     berkas.write("komputer kamu mati hahah")
-                    os.system('Halo.txt', 'r')
+                    os.path.sameopenfile('Halo.txt')
                     break
-                except (TypeError, ValueError):
+                except (ValueError):
                     print(f"harus berupa sebuah angka")
             else:
                 print("jawaban yang benar adalah: "+ str(angka))
