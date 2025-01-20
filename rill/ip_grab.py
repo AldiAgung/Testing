@@ -1,4 +1,4 @@
-import socket, sys, urllib
+import socket
 
 port = 80
 host = "www.google.com"
