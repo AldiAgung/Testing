@@ -54,8 +54,8 @@ def lamaoffline(mulai, selesai):
 # inisiasi label dll
 tk.Label(m, text= 'Ip Internet: ').grid(row = 1, column= 0, pady = 5, padx= 5, sticky='w')
 tk.Label(m, text= 'Status internet: ').grid(row = 2, column= 0, pady= 5, padx= 5, sticky= 'w')
-tk.Label(m, text= 'Lama offline: ').grid(row = 3, pady = 5, column= 0, sticky= 'w')
-tk.Label(m, text= 'Waktu lokal: ').grid(row= 0, pady= 5, column= 0, sticky= 'w')
+tk.Label(m, text= 'Lama offline: ').grid(row = 3, pady = 5, column= 0, sticky= 'w', padx= 5)
+tk.Label(m, text= 'Waktu lokal: ').grid(row= 0, pady= 5, column= 0, sticky= 'w', padx= 5)
 
 label_ip = tk.Label(m, text= "")
 label_status = tk.Label(m, text= "")
